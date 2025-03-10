@@ -9,7 +9,7 @@ This project focuses on analyzing sales data to understand the factors that infl
 ![histograms (2)](https://github.com/user-attachments/assets/d6446d15-e0e5-4367-b394-90ccd3797294)
 
 ### 2. Correlation Between Features (Heatmap)
-![Heatmap (2)](https://github.com/user-attachments/assets/d7c3bcde-5c94-4c8c-b218-2b7b28710360)
+![Heatmap](https://github.com/user-attachments/assets/466f8a3c-768f-4c7a-9e62-b43a623da3a8)
 
 ### 3. The frequency of each class of categorial features in the dataset (Countplots)
 ![Countplots (2)](https://github.com/user-attachments/assets/b91e1ef7-2409-455c-b0cb-76912bf902b2)
