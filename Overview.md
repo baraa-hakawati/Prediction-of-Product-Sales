@@ -1,31 +1,39 @@
-# Product Sales Prediction
+# Retail Sales Prediction Model
+
+**Author**: Baraa A. Hakawati  
+**Last Updated**: May 5, 2025
 
 ## 📊 Overview
-This project focuses on building a machine learning model to predict retail product sales using historical transactional data. The goal is to help retail businesses optimize inventory planning and make informed sales forecasts.
-
-The notebook includes end-to-end data science workflow: data cleaning, exploratory analysis, feature engineering, model selection, and evaluation. This project follows the CRISP-DM methodology.
+This machine learning project predicts product sales for retail stores using product attributes (weight, category, price) and store characteristics (size, location type, establishment year). The model helps retailers optimize inventory management and identify high-potential products.
 
 ## 🔍 Key Insights
-### 1. Sales Trends Vary by Product Category
-Certain product categories such as **Household** and **Grocery** consistently show higher sales volume, indicating demand stability. This trend can inform stocking priorities.
 
-![Sales by Category](images/sales_by_category.png)
+### 1. Price Has Strongest Correlation with Sales
+![Sales vs Price Correlation](![download](https://github.com/user-attachments/assets/b585b53a-cb92-4167-89cc-e16435b0f380)
+)
+- Item_MRP (price) shows 0.57 correlation with sales (highest among all features)
+- Higher-priced items consistently generate more revenue
+- **Business Implication**: Strategic pricing adjustments could boost profitability
 
-### 2. Store Type A Generates Highest Revenue
-Analysis revealed that **Store Type A** accounts for the highest sales, likely due to its size or location. This insight can guide future investments and marketing strategies.
+### 2. Supermarket Type1 Outperforms Other Formats
+![Sales by Outlet Type](images/outlet_type_performance.png)
+- Supermarket Type1 achieves 2.1× higher sales than Grocery Stores
+- Medium-sized stores show 18% better performance than small stores
+- **Business Implication**: Expansion strategy should prioritize high-performing formats
 
-![Sales by Store Type](images/sales_by_store_type.png)
+## 🚀 Model Performance
 
-## 🧠 Model Summary
-We tested multiple regression models, and the best-performing model was a **Random Forest Regressor**, which provided robust predictions with good generalization.
+### Tuned Random Forest Regressor (Best Model)
 
-### 📈 Evaluation Metrics:
-- **R² Score**: 0.59 (on test data)
-- **RMSE**: 1131.5  
-- **MAE**: 890.4
+| Metric        | Training | Test    |
+|---------------|----------|---------|
+| **R²**        | 0.702    | 0.588   |
+| **RMSE**      | $939     | $1,066  |
+| **MAE**       | $662     | $740    |
 
-These results suggest the model is moderately accurate and could be improved with more granular features (e.g., promotions, holidays, weather).
+**Key Takeaways**:
+- Explains **58.8%** of sales variation in unseen data
+- Average prediction error: **$740** per product
+- Minimal overfitting (training vs test performance gap <12%)
 
----
-
-For a full technical overview and to explore the code, refer to the [Jupyter Notebook](sales_prediction_model.ipynb).
+## 📂 Repository Structure
