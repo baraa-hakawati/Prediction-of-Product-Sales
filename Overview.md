@@ -1,7 +1,7 @@
 # Retail Sales Prediction Model
 
 **Author**: Baraa A. Hakawati  
-**Last Updated**: May 5, 2025
+**Last Updated**: [Insert Date]
 
 ## 📊 Overview
 This machine learning project predicts product sales for retail stores using product attributes (weight, category, price) and store characteristics (size, location type, establishment year). The model helps retailers optimize inventory management and identify high-potential products.
@@ -9,8 +9,7 @@ This machine learning project predicts product sales for retail stores using pro
 ## 🔍 Key Insights
 
 ### 1. Price Has Strongest Correlation with Sales
-![Sales vs Price Correlation](![download](https://github.com/user-attachments/assets/b585b53a-cb92-4167-89cc-e16435b0f380)
-)
+![Sales vs Price Correlation](images/price_sales_correlation.png)
 - Item_MRP (price) shows 0.57 correlation with sales (highest among all features)
 - Higher-priced items consistently generate more revenue
 - **Business Implication**: Strategic pricing adjustments could boost profitability
