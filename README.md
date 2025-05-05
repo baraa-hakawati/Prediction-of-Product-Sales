@@ -1,4 +1,4 @@
-# Prediction-of-Product-Sales
+# Optimize Retail Inventory Through Sales Prediction
 
 ## Project Description:
 This project focuses on analyzing sales data to understand the factors that influence sales performance. The dataset includes information about products, outlets, and sales figures. The goal is to create exploratory visuals that help identify patterns, trends, and relationships in the data.
