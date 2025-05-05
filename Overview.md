@@ -45,7 +45,7 @@ Item price (MRP) shows the strongest correlation with sales (r = 0.57), suggesti
 ### Outlet Performance Analysis  
 ![Sales by Outlet Type](images/outlet_type_performance.png)
 
-Supermarket Type1 outlets outperform grocery stores by 2.3×, while medium-sized stores show 18% higher sales than small formats.  
+Supermarket Type1 outlets outperform grocery stores by 2.3×, while large-sized stores show 18% higher sales than small formats.  
 
 ## Model  
 **Final Choice**: Tuned Random Forest Regressor  
