@@ -58,20 +58,6 @@ The model reduces prediction error by 32% compared to baseline estimates, enabli
 - More accurate inventory orders (±$740 error per item)  
 - Data-driven format expansion decisions  
 
-## Recommendations  
-1. **Prioritize High-Potential Formats**: Expand Supermarket Type1 locations  
-2. **Dynamic Pricing**: Use price-sensitivity insights to optimize margins  
-3. **Inventory Rules**: Adjust stock levels based on outlet characteristics  
-
-## Limitations & Next Steps  
-**Current Constraints**:  
-- Limited promotional/holiday data  
-- No supplier lead time information  
-
-**Future Enhancements**:  
-1. Incorporate seasonal demand patterns  
-2. Build real-time prediction API for store managers  
-
 ## Model Interpretations and Business Insights
 
 ### Linear Regression Model Analysis
@@ -135,6 +121,15 @@ The model reduces prediction error by 32% compared to baseline estimates, enabli
   - Customer demographics
   - Promotional activities
   - Seasonal effects
+ 
+## Limitations & Next Steps  
+**Current Constraints**:  
+- Limited promotional/holiday data  
+- No supplier lead time information  
+
+**Future Enhancements**:  
+1. Incorporate seasonal demand patterns  
+2. Build real-time prediction API for store managers  
 
 ---
 
