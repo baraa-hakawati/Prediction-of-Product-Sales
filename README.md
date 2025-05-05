@@ -72,6 +72,70 @@ The model reduces prediction error by 32% compared to baseline estimates, enabli
 1. Incorporate seasonal demand patterns  
 2. Build real-time prediction API for store managers  
 
+## Model Interpretations and Business Insights
+
+### Linear Regression Model Analysis
+
+#### Coefficients Visualization
+![Linear Regression Coefficients](./images/linear_reg_coefficients.png)
+
+#### Top 3 Most Impactful Features
+1. **`Item_MRP` (Maximum Retail Price) - Coefficient: +984.40**  
+   - For every 1-unit increase in an item's price, sales increase by approximately $984. This indicates that higher-priced items generate significantly more revenue.
+
+2. **`Outlet_Type_Supermarket Type3` - Coefficient: +1,695.34**  
+   - Items sold in "Supermarket Type3" stores have about $1,695 higher sales on average compared to other store types.
+
+3. **`Outlet_Type_Grocery Store` - Coefficient: -1,562.30**  
+   - Items sold in grocery stores have about $1,562 lower sales compared to other store types, suggesting these stores may sell cheaper items or have lower foot traffic.
+
+#### Key Insights
+- Store type has the most dramatic impact on sales performance
+- Higher-priced items drive significantly more revenue
+- Product visibility shows a counterintuitive negative relationship with sales
+
+### Random Forest Model Analysis
+
+#### Feature Importance Visualization
+![Random Forest Feature Importance](./images/random_forest_importance.png)
+
+#### Top 5 Most Important Features
+1. **`Item_MRP` (51.7% importance)** - The strongest predictor of sales
+2. **`Outlet_Type_Grocery Store` (27.0%)** - Major negative impact on sales
+3. **`Outlet_Type_Supermarket Type3` (8.2%)** - Significant positive impact
+4. **`Item_Visibility` (4.0%)** - More important in this non-linear model
+5. **`Outlet_Establishment_Year` (3.3%)** - Suggests newer/older stores perform differently
+
+#### Key Insights
+- Price is overwhelmingly the most important factor
+- Store type remains critically important
+- The Random Forest captures more complex relationships than Linear Regression
+
+## Recommendations for Business Strategy
+
+### Pricing and Product Mix
+- Focus on premium product offerings in high-performing store types
+- Test dynamic pricing strategies based on store performance
+- Analyze product mix in underperforming grocery stores
+
+### Store Operations
+- Consider expanding Supermarket Type3 locations
+- Investigate performance gaps in grocery stores
+- Optimize product placement based on visibility insights
+
+### Data and Modeling
+- Deploy the tuned Random Forest model (R²=0.588) for sales forecasting
+- Collect more complete data on `Outlet_Size` (currently 28% missing)
+- Monitor model performance as business strategies change
+
+## Next Steps
+- Implement A/B tests to validate model recommendations
+- Set up ongoing model performance monitoring
+- Consider collecting additional data on:
+  - Customer demographics
+  - Promotional activities
+  - Seasonal effects
+
 ---
 
 For further information:  
